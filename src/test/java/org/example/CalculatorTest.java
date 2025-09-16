@@ -20,7 +20,7 @@ class CalculatorTest {
 
     @Test
     void testMul() {
-        assertEquals(5, calc.mul(2,  3));
+        assertEquals(6, calc.mul(2,  3));
     }
 
     @Test
@@ -30,6 +30,6 @@ class CalculatorTest {
 
     @Test
     void testDiv() {
-        assertEquals(5, calc.div(2,  3));
+        assertEquals(5, calc.div(10,  2));
     }
 }
