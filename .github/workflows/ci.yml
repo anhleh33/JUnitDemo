@@ -6,13 +6,22 @@ jobs:
 
     steps:
       - name: Checkout repository
+        run: |
+          echo "📥 Checking out repository..."
+          git --version
         uses: actions/checkout@v4
 
       - name: Set up JDK
+        run: echo "☕ Setting up JDK 21 with Temurin..."
         uses: actions/setup-java@v4
         with:
           java-version: '21'
           distribution: 'temurin'
 
       - name: Build with Maven
-        run: mvn -B test
+        run: |
+          echo "🚀 Running Maven tests..."
+          mvn -B test
+
+      - name: Confirm checkout
+        run: echo "✅ Repository checked out successfully"
