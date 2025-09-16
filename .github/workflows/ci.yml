@@ -6,7 +6,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkoutt@v3
+        uses: actions/checkout@v3
 
       - name: Set up JDK
         uses: actions/setup-java@v3
